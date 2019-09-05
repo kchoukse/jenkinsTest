@@ -26,7 +26,7 @@ public class ApplicationDataController {
 	@Autowired
     private ApplicationDataService appDataService;
 	
-	 @CrossOrigin(origins = "http://localhost:4200")
+	 @CrossOrigin
 	 @GetMapping("/get-last-app")
 	    public ApplicationData getLastApplication(@RequestParam("ssnNumber")int ssnNumber) throws ApplicationException {
 	        if(appDataService.getLastApplication()==null)
@@ -34,7 +34,7 @@ public class ApplicationDataController {
 	        return appDataService.getLastApplication();
 	 	}
 	 
-	 @CrossOrigin(origins = "http://localhost:4200")
+	 @CrossOrigin
 	 @PostMapping("/add-app")
 	    public int addApplication(@RequestBody(required=true)ApplicationData appData) throws ApplicationException {   
 		 ApplicationData appData1 = new ApplicationData(appData.getSsnNumber(),appData.getFirstName(),appData.getMiddleName(),appData.getLastName(),appData.getDateOfBirth(),
@@ -47,7 +47,7 @@ public class ApplicationDataController {
 	        
 	    }
 	 
-	 @CrossOrigin(origins = "http://localhost:4200")
+	 @CrossOrigin
 	 @GetMapping("/get-app-list")
 	    public List<ApplicationData> getApplicationList() throws ApplicationException{
 		 if(appDataService.getApplicationList()==null)
