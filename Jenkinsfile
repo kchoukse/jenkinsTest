@@ -9,7 +9,7 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'mvn clean install -DskipTests'
-		sh 'mvn tomcat:run'
+		sh 'mvn tomcat:deploy'
             }
         }
     }
