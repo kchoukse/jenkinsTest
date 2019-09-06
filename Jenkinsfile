@@ -10,7 +10,6 @@ pipeline {
             steps {
                 sh 'mvn clean install -DskipTests'
 		sh 'mvn tomcat:run'
-		sh 'kill'
             }
         }
     }
