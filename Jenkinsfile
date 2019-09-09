@@ -9,7 +9,7 @@ pipeline {
         stage('Build') { 
             steps {
                 sh 'mvn clean install -DskipTests'
-		sh 'mvn tomcat7:run-war'
+		sh 'mvn tomcat7:run-war' 
             }
         }
     }
