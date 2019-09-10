@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-		sh 'create database spring'
+		sh 'mysql create database spring'
                 sh 'mvn clean install -DskipTests'
 		sh 'mvn tomcat:run-war' 
 
