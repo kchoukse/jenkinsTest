@@ -50,6 +50,7 @@ public class ApplicationDataController {
 	 @CrossOrigin
 	 @GetMapping("/get-app-list")
 	    public List<ApplicationData> getApplicationList() throws ApplicationException{
+	 	System.out.println("-------------------------------------");
 		 if(appDataService.getApplicationList()==null)
 	            throw new ApplicationException("No application found");
 		 return appDataService.getApplicationList();

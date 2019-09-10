@@ -30,7 +30,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/junit-4.10.jar"/>
-	<classpathentry kind="lib" path="C:/org.mockito_2.23.0.v20190527-1420.jar"/>
+	<classpathentry kind="lib" path="/home/kunalchoukse/GitRep/jenkinsTest/org.mockito_2.23.0.v20190527-1420.jar"/>
+	<classpathentry kind="lib" path="/home/kunalchoukse/GitRep/jenkinsTest/junit-4.10.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
