@@ -4,7 +4,7 @@ LABEL maintainer="KunalChoukse"
 
 ADD ./target/restdemo.war /usr/local/tomcat/webapps/
 
-EXPOSE 8080
+EXPOSE 8081
 
 
 
